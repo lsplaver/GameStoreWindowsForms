@@ -22,5 +22,17 @@ namespace GameStore
             Form frmOrders = new frmOrders();
             frmOrders.ShowDialog();
         }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            Form frmProducts = new frmProducts();
+            frmProducts.ShowDialog();
+        }
+
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            Form frmCustomers = new frmCustomers();
+            frmCustomers.ShowDialog();
+        }
     }
 }
