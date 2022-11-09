@@ -39,7 +39,7 @@ namespace GameStore
                 customer.FirstName = columns[0];
                 customer.LastName = columns[1];
                 customer.Email = columns[2];
-                customer.Add(customer);
+                customers.Add(customer);
             }
 
             customerIn.Close();

@@ -39,7 +39,7 @@ namespace GameStore
                 product.Code = columns[0];
                 product.Name = columns[1];
                 product.Price = columns[2];
-                product.Add(product);
+                products.Add(product);
             }
 
             productIn.Close();
