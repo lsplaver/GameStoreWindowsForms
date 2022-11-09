@@ -28,12 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lstCustomers = new System.Windows.Forms.ListBox();
+            this.btnAddCustomer = new System.Windows.Forms.Button();
+            this.btnDeleteCustomer = new System.Windows.Forms.Button();
+            this.btnEditCustomer = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Customers";
+            // 
+            // lstCustomers
+            // 
+            this.lstCustomers.FormattingEnabled = true;
+            this.lstCustomers.ItemHeight = 15;
+            this.lstCustomers.Location = new System.Drawing.Point(12, 27);
+            this.lstCustomers.Name = "lstCustomers";
+            this.lstCustomers.Size = new System.Drawing.Size(120, 94);
+            this.lstCustomers.TabIndex = 1;
+            // 
+            // btnAddCustomer
+            // 
+            this.btnAddCustomer.Location = new System.Drawing.Point(138, 27);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(75, 23);
+            this.btnAddCustomer.TabIndex = 2;
+            this.btnAddCustomer.Text = "Add";
+            this.btnAddCustomer.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteCustomer
+            // 
+            this.btnDeleteCustomer.Location = new System.Drawing.Point(138, 56);
+            this.btnDeleteCustomer.Name = "btnDeleteCustomer";
+            this.btnDeleteCustomer.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteCustomer.TabIndex = 3;
+            this.btnDeleteCustomer.Text = "Delete";
+            this.btnDeleteCustomer.UseVisualStyleBackColor = true;
+            // 
+            // btnEditCustomer
+            // 
+            this.btnEditCustomer.Location = new System.Drawing.Point(138, 85);
+            this.btnEditCustomer.Name = "btnEditCustomer";
+            this.btnEditCustomer.Size = new System.Drawing.Size(75, 23);
+            this.btnEditCustomer.TabIndex = 4;
+            this.btnEditCustomer.Text = "Edit";
+            this.btnEditCustomer.UseVisualStyleBackColor = true;
+            // 
+            // frmCustomers
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmCustomers";
+            this.ClientSize = new System.Drawing.Size(225, 132);
+            this.Controls.Add(this.btnEditCustomer);
+            this.Controls.Add(this.btnDeleteCustomer);
+            this.Controls.Add(this.btnAddCustomer);
+            this.Controls.Add(this.lstCustomers);
+            this.Controls.Add(this.label1);
+            this.Name = "frmCustomers";
+            this.Text = "Customers";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private Label label1;
+        private ListBox lstCustomers;
+        private Button btnAddCustomer;
+        private Button btnDeleteCustomer;
+        private Button btnEditCustomer;
     }
 }
