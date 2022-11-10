@@ -33,5 +33,45 @@ namespace GameStore
                 lstCustomers.Items.Add(customer.GetDisplayText());
             }
         }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            frmAddCustomer addCustomer = new frmAddCustomer();
+            Customer customer = addCustomer.GetNewCustomer();
+            if (customer.FirstName != null)
+            {
+                customers.Add(customer);
+                CustomerDB.SaveCustomers(customers);
+            }
+            FillListBox();
+        }
+
+        private void btnDeleteCustomer_Click(object sender, EventArgs e)
+        {
+            int index = lstCustomers.SelectedIndex;
+
+            if (index != -1)
+            {
+                customers.RemoveAt(index);
+                CustomerDB.SaveCustomers(customers);
+            }
+            FillListBox();
+        }
+
+        private void btnEditCustomer_Click(object sender, EventArgs e)
+        {
+            int index = lstCustomers.SelectedIndex;
+
+            if (index != -1)
+            {
+                Customer customer = customers.ElementAt(index);
+                frmAddCustomer editCustomer = new frmAddCustomer();
+                customer = editCustomer.GetNewCustomer();
+                customers.RemoveAt(index);
+                customers.Insert(index, customer);
+            }
+
+            FillListBox();
+        }
     }
 }
