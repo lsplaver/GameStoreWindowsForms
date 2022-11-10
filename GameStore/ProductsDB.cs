@@ -8,7 +8,7 @@ namespace GameStore
 {
     public class ProductsDB
     {
-        private const string dir = @".\GameStore\GameStore\";
+        private const string dir = @"C:\GameStore\GameStore\";
         private const string path = dir + "Products.txt";
 
         public static void SaveProducts(List<Product> products)

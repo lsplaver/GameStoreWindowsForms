@@ -12,9 +12,26 @@ namespace GameStore
 {
     public partial class frmCustomers : Form
     {
+        List<Customer> customers = null;
         public frmCustomers()
         {
             InitializeComponent();
+        }
+
+        private void frmCustomers_Load(object sender, EventArgs e)
+        {
+            customers = CustomerDB.GetAllCustomers();
+            FillListBox();
+        }
+
+        private void FillListBox()
+        {
+            lstCustomers.Items.Clear();
+            
+            foreach(Customer customer in customers)
+            {
+                lstCustomers.Items.Add(customer.GetDisplayText());
+            }
         }
     }
 }
