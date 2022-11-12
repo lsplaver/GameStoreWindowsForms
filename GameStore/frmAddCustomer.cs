@@ -70,5 +70,15 @@ namespace GameStore
             }
             return success;
         }
+
+        public Customer GetNewCustomer(Customer c)
+        {
+            customer = c;
+            this.txtFirstName.Text = customer.FirstName;
+            this.txtLastName.Text = customer.LastName;
+            this.txtEmail.Text = customer.Email;
+            this.ShowDialog();
+            return customer;
+        }
     }
 }

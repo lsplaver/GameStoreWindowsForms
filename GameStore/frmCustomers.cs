@@ -66,7 +66,7 @@ namespace GameStore
             {
                 Customer customer = customers.ElementAt(index);
                 frmAddCustomer editCustomer = new frmAddCustomer();
-                customer = editCustomer.GetNewCustomer();
+                customer = editCustomer.GetNewCustomer(customer);
                 customers.RemoveAt(index);
                 customers.Insert(index, customer);
             }
