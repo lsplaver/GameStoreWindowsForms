@@ -73,10 +73,9 @@ namespace GameStore
 
         public Customer GetNewCustomer(Customer c)
         {
-            customer = c;
-            this.txtFirstName.Text = customer.FirstName;
-            this.txtLastName.Text = customer.LastName;
-            this.txtEmail.Text = customer.Email;
+            this.txtFirstName.Text = c.FirstName;
+            this.txtLastName.Text = c.LastName;
+            this.txtEmail.Text = c.Email;
             this.ShowDialog();
             return customer;
         }

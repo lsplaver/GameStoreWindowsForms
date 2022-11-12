@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameStore
 {
-    public class ProductsDB
+    public class ProductDB
     {
         private const string dir = @"C:\GameStore\GameStore\";
         private const string path = dir + "Products.txt";

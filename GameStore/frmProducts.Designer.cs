@@ -37,30 +37,33 @@
             // 
             // btnEditProduct
             // 
-            this.btnEditProduct.Location = new System.Drawing.Point(138, 85);
+            this.btnEditProduct.Location = new System.Drawing.Point(292, 85);
             this.btnEditProduct.Name = "btnEditProduct";
             this.btnEditProduct.Size = new System.Drawing.Size(75, 23);
             this.btnEditProduct.TabIndex = 9;
             this.btnEditProduct.Text = "Edit";
             this.btnEditProduct.UseVisualStyleBackColor = true;
+            this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
             // 
             // btnDeleteProduct
             // 
-            this.btnDeleteProduct.Location = new System.Drawing.Point(138, 56);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(292, 56);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteProduct.TabIndex = 8;
             this.btnDeleteProduct.Text = "Delete";
             this.btnDeleteProduct.UseVisualStyleBackColor = true;
+            this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
             // btnAddProduct
             // 
-            this.btnAddProduct.Location = new System.Drawing.Point(138, 27);
+            this.btnAddProduct.Location = new System.Drawing.Point(292, 27);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(75, 23);
             this.btnAddProduct.TabIndex = 7;
             this.btnAddProduct.Text = "Add";
             this.btnAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // lstProducts
             // 
@@ -68,7 +71,7 @@
             this.lstProducts.ItemHeight = 15;
             this.lstProducts.Location = new System.Drawing.Point(12, 27);
             this.lstProducts.Name = "lstProducts";
-            this.lstProducts.Size = new System.Drawing.Size(120, 94);
+            this.lstProducts.Size = new System.Drawing.Size(263, 94);
             this.lstProducts.TabIndex = 6;
             // 
             // label1
@@ -84,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(225, 135);
+            this.ClientSize = new System.Drawing.Size(379, 132);
             this.Controls.Add(this.btnEditProduct);
             this.Controls.Add(this.btnDeleteProduct);
             this.Controls.Add(this.btnAddProduct);
@@ -92,6 +95,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmProducts";
             this.Text = "Products";
+            this.Load += new System.EventHandler(this.frmProducts_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

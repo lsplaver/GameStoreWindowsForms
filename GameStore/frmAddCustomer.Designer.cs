@@ -69,25 +69,25 @@
             // 
             this.txtFirstName.Location = new System.Drawing.Point(85, 6);
             this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.PlaceholderText = "Enter First Name";
             this.txtFirstName.Size = new System.Drawing.Size(100, 23);
             this.txtFirstName.TabIndex = 3;
-            this.txtFirstName.Text = "Enter First Name";
             // 
             // txtLastName
             // 
             this.txtLastName.Location = new System.Drawing.Point(85, 35);
             this.txtLastName.Name = "txtLastName";
+            this.txtLastName.PlaceholderText = "Enter Last Name";
             this.txtLastName.Size = new System.Drawing.Size(100, 23);
             this.txtLastName.TabIndex = 4;
-            this.txtLastName.Text = "Enter Last Name";
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(85, 64);
             this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PlaceholderText = "Enter Email";
             this.txtEmail.Size = new System.Drawing.Size(100, 23);
             this.txtEmail.TabIndex = 5;
-            this.txtEmail.Text = "Enter Email";
             // 
             // btnSaveCustomer
             // 
@@ -97,7 +97,7 @@
             this.btnSaveCustomer.TabIndex = 6;
             this.btnSaveCustomer.Text = "&Save";
             this.btnSaveCustomer.UseVisualStyleBackColor = true;
-			this.btnSaveCustomer.Click += new System.EventHandler(this.btnSaveCustomer_Click);
+            this.btnSaveCustomer.Click += new System.EventHandler(this.btnSaveCustomer_Click);
             // 
             // btnCancelCustomer
             // 
@@ -107,9 +107,9 @@
             this.btnCancelCustomer.TabIndex = 7;
             this.btnCancelCustomer.Text = "&Cancel";
             this.btnCancelCustomer.UseVisualStyleBackColor = true;
-			this.btnCancelCustomer.Click += new System.EventHandler(this.btnCancelCustomer_Click);
+            this.btnCancelCustomer.Click += new System.EventHandler(this.btnCancelCustomer_Click);
             // 
-            // AddCustomer
+            // frmAddCustomer
             // 
             this.AcceptButton = this.btnSaveCustomer;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -124,7 +124,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "AddCustomer";
+            this.Name = "frmAddCustomer";
             this.Text = "AddCustomer";
             this.ResumeLayout(false);
             this.PerformLayout();
